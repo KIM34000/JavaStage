@@ -1,0 +1,5 @@
+SELECT a.name,b.chara FROM `sub_category` AS a,`category` AS b WHERE  a.cat_id=b.id;
+
+SELECT a.name,b.chara
+FROM sub_category AS a
+INNER JOIN category AS b ON b.id = a.cat_id

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainViewController">
+   <left>
+      <VBox prefHeight="300.0" prefWidth="150.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuButton fx:id="Mbutton1" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Psychological" textAlignment="CENTER">
+              <items>
+                <MenuItem fx:id="cat1Sbutton1" mnemonicParsing="false" onAction="#handlecat1Sbutton1" text="Art Therapies" />
+                <MenuItem fx:id="cat1Sbutton2" mnemonicParsing="false" onAction="#handlecat1Sbutton2" text="Health education programs" />
+                  <MenuItem fx:id="cat1Sbutton3" mnemonicParsing="false" onAction="#handlecat1Sbutton3" text="Psychotherapies" />
+                  <MenuItem fx:id="cat1Sbutton4" mnemonicParsing="false" onAction="#handlecat1Sbutton4" text="Psycho-corporal practices" />
+                  <MenuItem fx:id="cat1Sbutton5" mnemonicParsing="false" onAction="#handlecat1Sbutton5" text="Animal assisted therapies" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="Mbutton2" mnemonicParsing="false" prefWidth="115.0" text="Physical" textAlignment="CENTER">
+              <items>
+                <MenuItem fx:id="cat2Sbutton1" mnemonicParsing="false" onAction="#handlecat2Sbutton1" text="Physical acto programs" />
+                <MenuItem fx:id="cat2Sbutton2" mnemonicParsing="false" onAction="#handlecat2Sbutton2" text="Hortitherapies" />
+                  <MenuItem fx:id="cat2Sbutton3" mnemonicParsing="false" onAction="#handlecat2Sbutton3" text="Physiotherapies" />
+                  <MenuItem fx:id="cat2Sbutton4" mnemonicParsing="false" onAction="#handlecat2Sbutton4" text="Mauemlles therapies" />
+                  <MenuItem fx:id="cat2Sbutton5" mnemonicParsing="false" onAction="#handlecat2Sbutton5" text="Programs balneological" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="Mbutton3" mnemonicParsing="false" prefWidth="115.0" text="Nutritional">
+              <items>
+                <MenuItem fx:id="cat3Sbutton1" mnemonicParsing="false" onAction="#handlecat3Sbutton1" text="Food supplements" />
+                <MenuItem fx:id="cat3Sbutton2" mnemonicParsing="false" onAction="#handlecat3Sbutton2" text="Nutritional programs" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="Mbutton4" mnemonicParsing="false" prefWidth="115.0" text="Digital">
+              <items>
+                <MenuItem fx:id="cat4Sbutton1" mnemonicParsing="false" onAction="#handlecat4Sbutton1" text="m-Health" />
+                <MenuItem fx:id="cat4Sbutton2" mnemonicParsing="false" onAction="#handlecat4Sbutton2" text="Video game therapy" />
+                  <MenuItem fx:id="cat4Sbutton3" mnemonicParsing="false" onAction="#handlecat4Sbutton3" text="Virtual reality therapies" />
+              </items>
+            </MenuButton>
+            <MenuButton fx:id="Mbutton5" mnemonicParsing="false" prefWidth="115.0" text="Elementary">
+              <items>
+                <MenuItem fx:id="cat5Sbutton1" mnemonicParsing="false" onAction="#handlecat5Sbutton1" text="Preparations" />
+                <MenuItem fx:id="cat5Sbutton2" mnemonicParsing="false" onAction="#handlecat5Sbutton2" text="Mycological preparations" />
+                  <MenuItem fx:id="cat5Sbutton3" mnemonicParsing="false" onAction="#handlecat5Sbutton3" text="botanical preparations" />
+                  <MenuItem fx:id="cat5Sbutton4" mnemonicParsing="false" onAction="#handlecat5Sbutton4" text="Electromagnetic methods" />
+                  <MenuItem fx:id="cat5Sbutton5" mnemonicParsing="false" onAction="#handlecat5Sbutton5" text="Cosmeceuticals" />
+              </items>
+            </MenuButton>
+            <TextField fx:id="ScatArea" editable="false" prefHeight="25.0" prefWidth="161.0" />
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuButton fx:id="DiseaseButton" mnemonicParsing="false" text="Disease">
+              <items>
+                <MenuItem fx:id="COVID19Button" mnemonicParsing="false" onAction="#handleCovid19button" text="COVID19" />
+                <MenuItem fx:id="CancerButton" mnemonicParsing="false" onAction="#handleCancerbutton" text="Cancer" />
+                  <MenuItem fx:id="bienvieillirbutton" mnemonicParsing="false" onAction="#handlebienvieillirbutton" text="bienvieillir" />
+              </items>
+            </MenuButton>
+            <TextField fx:id="DiseaseArea" editable="false" />
+            <MenuButton fx:id="DBbutton" mnemonicParsing="false" text="DBName">
+              <items>
+                <MenuItem fx:id="pubmedButton" mnemonicParsing="false" onAction="#handlepubmedbutton" text="Pubmed" />
+              </items>
+            </MenuButton>
+            <TextField fx:id="DBArea" editable="false" />
+            <Button fx:id="buttonok" mnemonicParsing="false" onAction="#handleOkbutton" text="ok" />
+         </children></HBox>
+   </top>
+   <center>
+      <TextArea fx:id="resultArea" editable="false" prefHeight="300.0" prefWidth="420.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
